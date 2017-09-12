@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  database:
+    image: postgres:9.6.5-alpine
+    container_name: doctrine-performance-pehapkari
+    volumes:
+      - ./.docker/database/init:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_DB=pehapkari
+      - POSTGRES_USER=pehapkari
+      - POSTGRES_PASSWORD=slonik
+    ports:
+      - "5432:5432"
