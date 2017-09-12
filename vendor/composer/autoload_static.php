@@ -8,11 +8,11 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
 {
     public static $files = array (
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
         '719971e375036615a0685b6fb054583d' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php',
@@ -43,6 +43,11 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
             'Sensio\\Bundle\\DistributionBundle\\' => 33,
         ),
+        'R' => 
+        array (
+            'Ramsey\\Uuid\\Doctrine\\' => 21,
+            'Ramsey\\Uuid\\' => 12,
+        ),
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
@@ -55,6 +60,14 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'LocalGovernmentBundle\\' => 22,
+        ),
+        'K' => 
+        array (
+            'Kdyby\\Doctrine\\Collections\\Readonly\\' => 36,
+        ),
         'I' => 
         array (
             'Incenteev\\ParameterHandler\\' => 27,
@@ -66,18 +79,19 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
             'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
         'C' => 
         array (
+            'Consistence\\Doctrine\\SymfonyBundle\\' => 35,
+            'Consistence\\Doctrine\\' => 21,
+            'Consistence\\' => 12,
             'Composer\\CaBundle\\' => 18,
-        ),
-        'A' => 
-        array (
-            'AppBundle\\' => 10,
         ),
     );
 
@@ -154,6 +168,14 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
         array (
             0 => __DIR__ . '/..' . '/sensio/distribution-bundle',
         ),
+        'Ramsey\\Uuid\\Doctrine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid-doctrine/src',
+        ),
+        'Ramsey\\Uuid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
@@ -178,6 +200,14 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'LocalGovernmentBundle\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Kdyby\\Doctrine\\Collections\\Readonly\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kdyby/doctrine-collections-readonly/src',
+        ),
         'Incenteev\\ParameterHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
@@ -190,9 +220,17 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
         'Doctrine\\Common\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
         'Doctrine\\Common\\' => 
         array (
@@ -206,13 +244,21 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
         array (
             0 => __DIR__ . '/..' . '/doctrine/doctrine-bundle',
         ),
+        'Consistence\\Doctrine\\SymfonyBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consistence/consistence-doctrine-symfony/src',
+        ),
+        'Consistence\\Doctrine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consistence/consistence-doctrine/src',
+        ),
+        'Consistence\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consistence/consistence/src',
+        ),
         'Composer\\CaBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
-        ),
-        'AppBundle\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/AppBundle',
         ),
     );
 
@@ -245,17 +291,9 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
             array (
                 0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
             ),
-            'Doctrine\\Common\\Inflector\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
-            ),
             'Doctrine\\Common\\Collections\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
-            ),
-            'Doctrine\\Common\\Annotations\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
             ),
         ),
     );
@@ -266,10 +304,103 @@ class ComposerStaticInit34703d428d0db2b5c34e92923e9b328c
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'Collator' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/Intl/Resources/stubs/Collator.php',
+        'Consistence\\Annotation\\Annotation' => __DIR__ . '/..' . '/consistence/consistence/src/Annotation/Annotation.php',
+        'Consistence\\Annotation\\AnnotationField' => __DIR__ . '/..' . '/consistence/consistence/src/Annotation/AnnotationField.php',
+        'Consistence\\Annotation\\AnnotationFieldNotFoundException' => __DIR__ . '/..' . '/consistence/consistence/src/Annotation/exceptions/AnnotationFieldNotFoundException.php',
+        'Consistence\\Annotation\\AnnotationNotFoundException' => __DIR__ . '/..' . '/consistence/consistence/src/Annotation/exceptions/AnnotationNotFoundException.php',
+        'Consistence\\Annotation\\AnnotationProvider' => __DIR__ . '/..' . '/consistence/consistence/src/Annotation/AnnotationProvider.php',
+        'Consistence\\ClassFinder\\ClassFinder' => __DIR__ . '/..' . '/consistence/consistence/src/ClassFinder/ClassFinder.php',
+        'Consistence\\Doctrine\\Enum\\EnumAnnotation' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/EnumAnnotation.php',
+        'Consistence\\Doctrine\\Enum\\EnumPostLoadEntityListener' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/EnumPostLoadEntityListener.php',
+        'Consistence\\Doctrine\\Enum\\NotEnumException' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/exceptions/NotEnumException.php',
+        'Consistence\\Doctrine\\Enum\\Type\\EnumType' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/Type/EnumType.php',
+        'Consistence\\Doctrine\\Enum\\Type\\FloatEnumType' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/Type/FloatEnumType.php',
+        'Consistence\\Doctrine\\Enum\\Type\\IntegerEnumType' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/Type/IntegerEnumType.php',
+        'Consistence\\Doctrine\\Enum\\Type\\StringEnumType' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/Type/StringEnumType.php',
+        'Consistence\\Doctrine\\Enum\\UnsupportedClassMetadataException' => __DIR__ . '/..' . '/consistence/consistence-doctrine/src/Enum/exceptions/UnsupportedClassMetadataException.php',
+        'Consistence\\Doctrine\\SymfonyBundle\\ConsistenceDoctrineBundle' => __DIR__ . '/..' . '/consistence/consistence-doctrine-symfony/src/ConsistenceDoctrineBundle.php',
+        'Consistence\\Doctrine\\SymfonyBundle\\DependencyInjection\\ConsistenceDoctrineExtension' => __DIR__ . '/..' . '/consistence/consistence-doctrine-symfony/src/DependencyInjection/ConsistenceDoctrineExtension.php',
+        'Consistence\\Doctrine\\SymfonyBundle\\DependencyInjection\\DoctrineBundleRequiredException' => __DIR__ . '/..' . '/consistence/consistence-doctrine-symfony/src/DependencyInjection/exceptions/DoctrineBundleRequiredException.php',
+        'Consistence\\Enum\\DuplicateValueSpecifiedException' => __DIR__ . '/..' . '/consistence/consistence/src/Enum/exceptions/DuplicateValueSpecifiedException.php',
+        'Consistence\\Enum\\Enum' => __DIR__ . '/..' . '/consistence/consistence/src/Enum/Enum.php',
+        'Consistence\\Enum\\InvalidEnumValueException' => __DIR__ . '/..' . '/consistence/consistence/src/Enum/exceptions/InvalidEnumValueException.php',
+        'Consistence\\Enum\\MultiEnum' => __DIR__ . '/..' . '/consistence/consistence/src/Enum/MultiEnum.php',
+        'Consistence\\Enum\\MultiEnumValueIsNotPowerOfTwoException' => __DIR__ . '/..' . '/consistence/consistence/src/Enum/exceptions/MultiEnumValueIsNotPowerOfTwoException.php',
+        'Consistence\\Enum\\NoSingleEnumSpecifiedException' => __DIR__ . '/..' . '/consistence/consistence/src/Enum/exceptions/NoSingleEnumSpecifiedException.php',
+        'Consistence\\Enum\\OperationSupportedOnlyForSameEnumException' => __DIR__ . '/..' . '/consistence/consistence/src/Enum/exceptions/OperationSupportedOnlyForSameEnumException.php',
+        'Consistence\\InvalidArgumentException' => __DIR__ . '/..' . '/consistence/consistence/src/exceptions/InvalidArgumentException.php',
+        'Consistence\\InvalidArgumentTypeException' => __DIR__ . '/..' . '/consistence/consistence/src/exceptions/InvalidArgumentTypeException.php',
+        'Consistence\\Math\\Math' => __DIR__ . '/..' . '/consistence/consistence/src/Math/Math.php',
+        'Consistence\\Math\\NonNegativeIntegerExpectedException' => __DIR__ . '/..' . '/consistence/consistence/src/Math/exceptions/NonNegativeIntegerExpectedException.php',
+        'Consistence\\ObjectPrototype' => __DIR__ . '/..' . '/consistence/consistence/src/ObjectPrototype.php',
+        'Consistence\\PhpException' => __DIR__ . '/..' . '/consistence/consistence/src/exceptions/PhpException.php',
+        'Consistence\\Reflection\\ClassReflection' => __DIR__ . '/..' . '/consistence/consistence/src/Reflection/ClassReflection.php',
+        'Consistence\\RegExp\\Exception' => __DIR__ . '/..' . '/consistence/consistence/src/RegExp/exceptions/Exception.php',
+        'Consistence\\RegExp\\RegExp' => __DIR__ . '/..' . '/consistence/consistence/src/RegExp/RegExp.php',
+        'Consistence\\StaticClassException' => __DIR__ . '/..' . '/consistence/consistence/src/exceptions/StaticClassException.php',
+        'Consistence\\Time\\InvalidTimeForFormatException' => __DIR__ . '/..' . '/consistence/consistence/src/Time/exceptions/InvalidTimeForFormatException.php',
+        'Consistence\\Time\\TimeDoesNotExistException' => __DIR__ . '/..' . '/consistence/consistence/src/Time/exceptions/TimeDoesNotExistException.php',
+        'Consistence\\Time\\TimeDoesNotMatchFormatException' => __DIR__ . '/..' . '/consistence/consistence/src/Time/exceptions/TimeDoesNotMatchFormatException.php',
+        'Consistence\\Time\\TimeFormat' => __DIR__ . '/..' . '/consistence/consistence/src/Time/TimeFormat.php',
+        'Consistence\\Type\\ArrayType\\ArrayType' => __DIR__ . '/..' . '/consistence/consistence/src/Type/ArrayType/ArrayType.php',
+        'Consistence\\Type\\ArrayType\\ElementDoesNotExistException' => __DIR__ . '/..' . '/consistence/consistence/src/Type/ArrayType/exceptions/ElementDoesNotExistException.php',
+        'Consistence\\Type\\ArrayType\\KeyValuePair' => __DIR__ . '/..' . '/consistence/consistence/src/Type/ArrayType/KeyValuePair.php',
+        'Consistence\\Type\\ArrayType\\KeyValuePairMutable' => __DIR__ . '/..' . '/consistence/consistence/src/Type/ArrayType/KeyValuePairMutable.php',
+        'Consistence\\Type\\ObjectMixin' => __DIR__ . '/..' . '/consistence/consistence/src/Type/ObjectMixin.php',
+        'Consistence\\Type\\ObjectMixinTrait' => __DIR__ . '/..' . '/consistence/consistence/src/Type/ObjectMixinTrait.php',
+        'Consistence\\Type\\String\\Utf8StringType' => __DIR__ . '/..' . '/consistence/consistence/src/Type/String/Utf8StringType.php',
+        'Consistence\\Type\\Type' => __DIR__ . '/..' . '/consistence/consistence/src/Type/Type.php',
+        'Consistence\\UndefinedMethodException' => __DIR__ . '/..' . '/consistence/consistence/src/exceptions/UndefinedMethodException.php',
+        'Consistence\\UndefinedPropertyException' => __DIR__ . '/..' . '/consistence/consistence/src/exceptions/UndefinedPropertyException.php',
         'DivisionByZeroError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
         'Error' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/Error.php',
         'IntlDateFormatter' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/Intl/Resources/stubs/IntlDateFormatter.php',
+        'Kdyby\\Doctrine\\Collections\\Readonly\\Exception' => __DIR__ . '/..' . '/kdyby/doctrine-collections-readonly/src/exceptions.php',
+        'Kdyby\\Doctrine\\Collections\\Readonly\\NotSupportedException' => __DIR__ . '/..' . '/kdyby/doctrine-collections-readonly/src/exceptions.php',
+        'Kdyby\\Doctrine\\Collections\\Readonly\\ReadOnlyCollectionException' => __DIR__ . '/..' . '/kdyby/doctrine-collections-readonly/src/exceptions.php',
         'Locale' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/Intl/Resources/stubs/Locale.php',
+        'Nette\\ArgumentOutOfRangeException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\DeprecatedException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\DirectoryNotFoundException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\FileNotFoundException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\IOException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\InvalidArgumentException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\InvalidStateException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Iterators\\CachingIterator' => __DIR__ . '/..' . '/nette/utils/src/Iterators/CachingIterator.php',
+        'Nette\\Iterators\\Filter' => __DIR__ . '/..' . '/nette/utils/src/Iterators/Filter.php',
+        'Nette\\Iterators\\Mapper' => __DIR__ . '/..' . '/nette/utils/src/Iterators/Mapper.php',
+        'Nette\\Iterators\\RecursiveFilter' => __DIR__ . '/..' . '/nette/utils/src/Iterators/RecursiveFilter.php',
+        'Nette\\Localization\\ITranslator' => __DIR__ . '/..' . '/nette/utils/src/Utils/ITranslator.php',
+        'Nette\\MemberAccessException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\NotImplementedException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\NotSupportedException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Object' => __DIR__ . '/..' . '/nette/utils/src/Utils/Object.php',
+        'Nette\\OutOfRangeException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\SmartObject' => __DIR__ . '/..' . '/nette/utils/src/Utils/SmartObject.php',
+        'Nette\\StaticClass' => __DIR__ . '/..' . '/nette/utils/src/Utils/StaticClass.php',
+        'Nette\\StaticClassException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\UnexpectedValueException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Utils\\ArrayHash' => __DIR__ . '/..' . '/nette/utils/src/Utils/ArrayHash.php',
+        'Nette\\Utils\\ArrayList' => __DIR__ . '/..' . '/nette/utils/src/Utils/ArrayList.php',
+        'Nette\\Utils\\Arrays' => __DIR__ . '/..' . '/nette/utils/src/Utils/Arrays.php',
+        'Nette\\Utils\\AssertionException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Utils\\Callback' => __DIR__ . '/..' . '/nette/utils/src/Utils/Callback.php',
+        'Nette\\Utils\\DateTime' => __DIR__ . '/..' . '/nette/utils/src/Utils/DateTime.php',
+        'Nette\\Utils\\FileSystem' => __DIR__ . '/..' . '/nette/utils/src/Utils/FileSystem.php',
+        'Nette\\Utils\\Html' => __DIR__ . '/..' . '/nette/utils/src/Utils/Html.php',
+        'Nette\\Utils\\IHtmlString' => __DIR__ . '/..' . '/nette/utils/src/Utils/IHtmlString.php',
+        'Nette\\Utils\\Image' => __DIR__ . '/..' . '/nette/utils/src/Utils/Image.php',
+        'Nette\\Utils\\ImageException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Utils\\Json' => __DIR__ . '/..' . '/nette/utils/src/Utils/Json.php',
+        'Nette\\Utils\\JsonException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Utils\\ObjectMixin' => __DIR__ . '/..' . '/nette/utils/src/Utils/ObjectMixin.php',
+        'Nette\\Utils\\Paginator' => __DIR__ . '/..' . '/nette/utils/src/Utils/Paginator.php',
+        'Nette\\Utils\\Random' => __DIR__ . '/..' . '/nette/utils/src/Utils/Random.php',
+        'Nette\\Utils\\Reflection' => __DIR__ . '/..' . '/nette/utils/src/Utils/Reflection.php',
+        'Nette\\Utils\\RegexpException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Utils\\Strings' => __DIR__ . '/..' . '/nette/utils/src/Utils/Strings.php',
+        'Nette\\Utils\\UnknownImageFileException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
+        'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
         'NumberFormatter' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/Intl/Resources/stubs/NumberFormatter.php',
         'ParseError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
         'SqlFormatter' => __DIR__ . '/..' . '/jdorn/sql-formatter/lib/SqlFormatter.php',
