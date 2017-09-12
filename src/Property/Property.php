@@ -36,6 +36,7 @@ class Property
 
 	/**
 	 * @ORM\ManyToOne(targetEntity=PropertyAddress::class)
+	 * @ORM\JoinColumn(nullable=false)
 	 * @var PropertyAddress
 	 */
 	private $address;
@@ -85,7 +86,7 @@ class Property
 	}
 
 	/**
-	 * @return Citizen[]|Collection
+	 * @return PropertyOwnership[]|Collection
 	 */
 	public function getOwners(): Collection
 	{

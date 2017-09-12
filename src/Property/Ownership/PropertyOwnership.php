@@ -25,12 +25,14 @@ class PropertyOwnership
 
 	/**
 	 * @ORM\ManyToOne(targetEntity=Citizen::class)
+	 * @ORM\JoinColumn(nullable=false)
 	 * @var Citizen
 	 */
 	private $owner;
 
 	/**
 	 * @ORM\ManyToOne(targetEntity=Property::class, inversedBy="owners")
+	 * @ORM\JoinColumn(nullable=false)
 	 * @var Property
 	 */
 	private $property;

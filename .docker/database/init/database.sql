@@ -228,24 +228,31 @@ COMMENT ON COLUMN property_residency.type IS '(DC2Type:string_enum)';
 --
 
 INSERT INTO citizen (id, mother_id, father_id, name, birth_date) VALUES ('d6f6a52c-6d3b-4ca9-ae50-4e9d955023b0', NULL, NULL, 'Franta Nemam', '1990-05-05 15:50:55');
+INSERT INTO citizen (id, mother_id, father_id, name, birth_date) VALUES ('56e05476-3853-4c65-9092-d5fa4d5f1666', NULL, NULL, 'Bender', '1980-05-05 15:50:55');
+INSERT INTO citizen (id, mother_id, father_id, name, birth_date) VALUES ('15d162cb-8e43-416d-8043-396b0a7cfd2b', '56e05476-3853-4c65-9092-d5fa4d5f1666', 'd6f6a52c-6d3b-4ca9-ae50-4e9d955023b0', 'Fry', '1980-05-05 15:50:55');
 
 
 --
 -- Data for Name: property; Type: TABLE DATA; Schema: public; Owner: pehapkari
 --
 
+INSERT INTO property (id, address_id, type) VALUES ('3c8a6789-fe61-4ae4-8322-2553e2f507a1', '020fafb1-6628-41f4-a688-a1646c0cdd62', 'home');
 
 
 --
 -- Data for Name: property_address; Type: TABLE DATA; Schema: public; Owner: pehapkari
 --
 
+INSERT INTO property_address (id, city, street, house_number, postal_code) VALUES ('020fafb1-6628-41f4-a688-a1646c0cdd62', 'Brno', 'Hlavni', 1, 60200);
 
 
 --
 -- Data for Name: property_ownership; Type: TABLE DATA; Schema: public; Owner: pehapkari
 --
 
+INSERT INTO property_ownership (id, owner_id, property_id) VALUES ('07c9ac55-aaac-400b-b3a2-f400380b508b', 'd6f6a52c-6d3b-4ca9-ae50-4e9d955023b0', '3c8a6789-fe61-4ae4-8322-2553e2f507a1');
+INSERT INTO property_ownership (id, owner_id, property_id) VALUES ('3b55821e-627b-40e7-90ae-3c8ef89dd37f', '56e05476-3853-4c65-9092-d5fa4d5f1666', '3c8a6789-fe61-4ae4-8322-2553e2f507a1');
+INSERT INTO property_ownership (id, owner_id, property_id) VALUES ('93e6478a-8602-4b37-88fa-f6ced4833b0b', '15d162cb-8e43-416d-8043-396b0a7cfd2b', '3c8a6789-fe61-4ae4-8322-2553e2f507a1');
 
 
 --

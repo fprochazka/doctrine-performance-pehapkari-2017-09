@@ -27,8 +27,13 @@ class CitizenRepository
 	public function getCitizen(Uuid $citizenId): Citizen
 	{
 		try {
+			$dql = 'SELECT citizen, mother
+				FROM \LocalGovernmentBundle\Citizen\Citizen citizen
+				LEFT JOIN citizen.mother mother
+				WHERE citizen.id = :citizenId';
+
 			return $this->entityManager
-				->createQuery('SELECT citizen FROM \LocalGovernmentBundle\Citizen\Citizen citizen WHERE citizen.id = :citizenId')
+				->createQuery($dql)
 				->setParameter('citizenId', $citizenId)
 				->getSingleResult();
 
@@ -36,6 +41,5 @@ class CitizenRepository
 			throw new \LocalGovernmentBundle\Citizen\Exceptions\CitizenNotFoundException($citizenId, $e);
 		}
 	}
-
 
 }
